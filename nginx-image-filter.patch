@@ -1,6 +1,6 @@
-diff -ruN src/http/modules/ngx_http_image_filter_module.c src/http/modules/ngx_http_image_filter_module.c
---- src/http/modules/ngx_http_image_filter_module.c	2015-04-21 21:12:00.000000000 +0700
-+++ src/http/modules/ngx_http_image_filter_module.c	2015-04-29 12:26:03.000000000 +0700
+diff -ruN a/src/http/modules/ngx_http_image_filter_module.c b/src/http/modules/ngx_http_image_filter_module.c
+--- a/src/http/modules/ngx_http_image_filter_module.c	2015-04-21 21:12:00.000000000 +0700
++++ b/src/http/modules/ngx_http_image_filter_module.c	2015-04-29 12:26:03.000000000 +0700
 @@ -317,9 +317,8 @@
                  }
              }
