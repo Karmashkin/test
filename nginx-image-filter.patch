@@ -1,0 +1,15 @@
+diff -ruN src/http/modules/ngx_http_image_filter_module.c src/http/modules/ngx_http_image_filter_module.c
+--- src/http/modules/ngx_http_image_filter_module.c	2015-04-21 21:12:00.000000000 +0700
++++ src/http/modules/ngx_http_image_filter_module.c	2015-04-29 12:26:03.000000000 +0700
+@@ -317,9 +317,8 @@
+                 }
+             }
+ 
+-            return ngx_http_filter_finalize_request(r,
+-                                              &ngx_http_image_filter_module,
+-                                              NGX_HTTP_UNSUPPORTED_MEDIA_TYPE);
++            /* wait to consume more data, do not give up on the request right away */
++            return NGX_OK;
+         }
+ 
+         /* override content type */
